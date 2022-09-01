@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/* 日本語 */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  color: #141414;
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.6rem;
+  background: #E6E2D7;
+}
+
+a {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.cont {
+  max-width: 1024px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.rl {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+}
+
+.info, .product01, .product02, .gmap {
+  margin-top: 80px;
+}
+
+.header {
+  background-image: url(../img/mainvisual-sp.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  padding: 20px;
+  position: relative;
+}
+
+.menu {
+  padding-right: 3em;
+}
+.menu li {
+  padding-left: 1.2em;
+}
+
+.btn_online {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+.btn_online a {
+  display: inline;
+  background-color: #555;
+  outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -7px;
+  padding: 16px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.main .ttl {
+  font-size: 2.8rem;
+  letter-spacing: 0.1em;
+}
+.main .ttl .sub {
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 0;
+}
+.main .ttl .pc_only {
+  display: none;
+}
+.main .pc_only {
+  display: none;
+}
+.main .info {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.main .info .date {
+  padding-right: 40px;
+  padding-top: 20px;
+}
+.main .info .date div {
+  padding: 20px 0.8em;
+  border-left: 1px #141414 solid;
+}
+.main .info .date div:first-child {
+  border-right: 1px #141414 solid;
+}
+.main .info .date dd {
+  margin: 0;
+}
+.main .info .date dt {
+  font-size: 1.3rem;
+}
+.main .product01 .block {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.main .product01 .imgArea {
+  position: relative;
+  padding-top: 40px;
+  padding-right: 10px;
+}
+.main .product01 .imgArea .txt {
+  background: rgba(249, 233, 6, 0.6);
+  color: #fff;
+  opacity: 0.8;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  padding: 2em;
+  width: 70%;
+}
+.main .product02 .block {
+  display: flex;
+}
+.main .product02 .imgArea {
+  position: relative;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+.main .product02 .imgArea .txt {
+  background: rgba(149, 42, 38, 0.6);
+  color: #fff;
+  opacity: 0.8;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  padding: 2em;
+  width: 70%;
+}
+.main .gmap iframe {
+  width: 100%;
+}
+
+.footer {
+  color: #fff;
+  background: #141414;
+  font-size: 1.4rem;
+  padding: 20px;
+  padding-top: 40px;
+}
+.footer .block {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.footer .block .txtArea {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.footer .block .address {
+  padding: 0 2em;
+}
+.footer .menu {
+  padding-right: 0;
+}
+.footer span {
+  position: relative;
+}
+.footer span::before {
+  position: absolute;
+  left: 4px;
+  content: "|";
+}
+.footer .copyright {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url(../img/mainvisual-pc.jpg);
+    padding-top: 60px;
+    padding-right: 60px;
+    position: relative;
+  }
+  .header .btn_online {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+  }
+  .main .info {
+    margin-top: 120px;
+  }
+  .main .product01, .main .product02, .main .gmap {
+    margin-top: 200px;
+  }
+  .main .ttl {
+    font-size: 3.6rem;
+    letter-spacing: 0.1em;
+  }
+  .main .ttl .pc_only {
+    display: inline-block;
+    padding-top: 1em;
+  }
+  .main .info .date div {
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+  }
+  .main .pc_only {
+    display: block;
+  }
+  .main .product01, .main .product02 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main .product01 .block, .main .product02 .block {
+    width: 70%;
+  }
+  .main .product02 {
+    justify-content: flex-start;
+  }
+  .footer {
+    padding: 80px 60px 20px 60px;
+  }
+  .footer .block .address {
+    padding: 0 4em;
+  }
+}/*# sourceMappingURL=style.css.map */
